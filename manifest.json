@@ -1,0 +1,20 @@
+{
+  "name": "Infinite Stellar.io",
+  "version": "0.1",
+
+  "description": "Adds infinite scrolling to all stallar.io flows",
+  "icons": {
+    "16": "images/icon-16.png",
+    "72": "images/icon-72.png",
+    "57": "images/icon-57.png",
+    "114": "images/icon-114.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.stellar.io/*"],
+      "js": ["jquery.min.js","infinite_stellario.js"]
+    }
+  ],
+  "homepage_url": "http://path/to/homepage"
+}
