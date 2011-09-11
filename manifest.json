@@ -5,9 +5,8 @@
   "description": "Adds infinite scrolling to all stallar.io flows",
   "icons": {
     "16": "images/icon-16.png",
-    "72": "images/icon-72.png",
-    "57": "images/icon-57.png",
-    "114": "images/icon-114.png"
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
   },
 
   "content_scripts": [
