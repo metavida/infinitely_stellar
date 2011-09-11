@@ -13,7 +13,7 @@
   "content_scripts": [
     {
       "matches": ["*://*.stellar.io/*"],
-      "js": ["jquery.min.js","infinite_stellario.js"]
+      "js": ["zepto.min.js","infinite_stellario.js"]
     }
   ],
   "homepage_url": "http://path/to/homepage"
