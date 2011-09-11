@@ -14,6 +14,11 @@
       case 'undefined':
         placeHolder.load(nextPageEl.attr('href'), function() {
           nextPageEl.data('infinite', 'success');
+          var nextContentEls = placeHolder.find('#main').children().
+            not('#nav').not('#entity-nav-bk-lg').not('.notify-top');
+          $('#pagination').prev().remove();
+          $('#pagination').next().remove();
+          $('#pagination').after(nextContentEls).remove();
         });
         nextPageEl.data('infinite', 'loading');
         break;
