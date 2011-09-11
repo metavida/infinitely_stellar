@@ -16,6 +16,8 @@
       // that means we haven't requested the next page worth of data yet.
       if(typeof(nextPageStatus) == 'undefined') {
         nextPageEl.data('infinite', 'loading');
+        $('#pagination .paging').addClass('infinite_loading');
+        // Get that next page worth of data!
         $.ajax({
           url: nextPageEl.attr('href'), 
           dataType: 'html',
