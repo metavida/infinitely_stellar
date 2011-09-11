@@ -7,21 +7,36 @@
   };
   var placeHolder = $(document.createElement('div'));
   var getNext = function() {
-    var nextPageEl = $('#pagination a').first(),
+    var nextPageEl = $('#pagination .paging a').first(),
       nextPageStatus = nextPageEl.data('infinite');
     
-    switch(nextPageStatus + '') {
-      case 'undefined':
-        placeHolder.load(nextPageEl.attr('href'), function() {
-          nextPageEl.data('infinite', 'success');
-          var nextContentEls = placeHolder.find('#main').children().
-            not('#nav').not('#entity-nav-bk-lg').not('.notify-top');
-          $('#pagination').prev().remove();
-          $('#pagination').next().remove();
-          $('#pagination').after(nextContentEls).remove();
-        });
-        nextPageEl.data('infinite', 'loading');
-        break;
+    if(nextPageEl.size() > 0) {
+      switch(nextPageStatus + '') {
+        case 'undefined':
+          $.ajax({
+            url: nextPageEl.attr('href'), 
+            dataType: 'html',
+            success: function(gottenHtml) {
+              try {
+                placeHolder.html(gottenHtml);
+                var nextContentEls = placeHolder.find('#main').children().
+                  not('#nav').not('#entity-nav-bk-lg').not('.notify-top');
+                if(nextContentEls.size() > 3) {
+                  $('#pagination').next().remove();
+                  $('#pagination').after(nextContentEls).remove();
+                  $('#main').find('.rule + .rule').remove();
+                } else {
+                  nextPageEl.data('infinite', 'done');
+                }
+              } catch(err) { nextPageEl.data('infinite', 'js-error: '+err.message); }
+            },
+            error: function(gottenHtml, err) {
+              nextPageEl.data('infinite', 'http-error: '+err);
+            }
+          });
+          nextPageEl.data('infinite', 'loading');
+          break;
+      }
     }
   };
   
