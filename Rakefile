@@ -20,7 +20,7 @@ PLATFORMS = {
     :dist_dir => File.join(PROJECT_ROOT, 'dist/greasemonkey'),
     :files => {
       ['greasemonkey/init.before.js', 'infinite_stellario.js', 'greasemonkey/init.after.js'] \
-        => 'infinite_stellario.js',
+        => 'infinite_stellario.user.js',
     }
   },
   :firefox => {

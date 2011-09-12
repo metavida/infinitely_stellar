@@ -3,6 +3,7 @@
 Get Infinite Stellar.io:
 
 * [Google Chrome](https://chrome.google.com/webstore/detail/agnoeoljdbkgpdeoenhbgacempgcnblk)
+* [Firefox](https://github.com/downloads/metavida/infinite_stellario/infinite_stellario.user.js) (requires [Greasemonkey](http://www.greasespot.net))
 * Want Infinite Stellar.io for your browser? Let me know [@metavida](http://twitter.com/metavida) or open a GitHub Issue.
 
 -- [Marcos](http://stellar.io/metavida)
