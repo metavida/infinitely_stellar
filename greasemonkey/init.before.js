@@ -2,7 +2,7 @@
 // @name Infinitely Stellar
 // @namespace	https://github.com/metavida/infinitely_stellar
 // @description Adds infinite scrolling to all Stallar.io flows.
-// @version 0.2
+// @version 0.3
 // @creator  Marcos Wright-Kuhns
 // @include http://stellar.io/*
 // ==/UserScript==
