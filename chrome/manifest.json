@@ -1,12 +1,12 @@
 {
   "name": "Infinite Stellar.io",
-  "version": "0.1",
+  "version": "0.2",
 
   "description": "Adds infinite scrolling to all stallar.io flows.",
   "icons": {
-    "16": "images/icon-16.png",
-    "48": "images/icon-48.png",
-    "128": "images/icon-128.png"
+    "16": "icon-16.png",
+    "48": "icon-48.png",
+    "128": "icon-128.png"
   },
 
   "content_scripts": [
