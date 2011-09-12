@@ -47,4 +47,4 @@
   };
   
   $(window).bind('scroll', watchScroll);
-})();
+})
