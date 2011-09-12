@@ -7,9 +7,9 @@ PLATFORMS = {
     :dist_dir => File.join(PROJECT_ROOT, 'dist/chrome'),
     :files => {
       'chrome/manifest.json'    => '/',
-      ['infinite_stellario.js', 'chrome/init.after.js'] \
-                                => 'infinite_stellario.js',
-      'infinite_stellario.css'  => '/',
+      ['infinitely_stellar.js', 'chrome/init.after.js'] \
+                                => 'infinitely_stellar.js',
+      'infinitely_stellar.css'  => '/',
       'chrome/zepto.min.js'     => '/',
       'images/icon-16.png'      => '/',
       'images/icon-48.png'      => '/',
@@ -19,15 +19,15 @@ PLATFORMS = {
   :greasemonkey => {
     :dist_dir => File.join(PROJECT_ROOT, 'dist/greasemonkey'),
     :files => {
-      ['greasemonkey/init.before.js', 'infinite_stellario.js', 'greasemonkey/init.after.js'] \
-        => 'infinite_stellario.user.js',
+      ['greasemonkey/init.before.js', 'infinitely_stellar.js', 'greasemonkey/init.after.js'] \
+        => 'infinitely_stellar.user.js',
     }
   },
   :firefox => {
     :dist_dir => File.join(PROJECT_ROOT, 'dist/firefox'),
     :files => {
-      'infinite_stellario.js'   => '/',
-      'infinite_stellario.css'  => '/',
+      'infinitely_stellar.js'   => '/',
+      'infinitely_stellar.css'  => '/',
     }
   }
 }

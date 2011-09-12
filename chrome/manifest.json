@@ -1,8 +1,8 @@
 {
-  "name": "Infinite Stellar.io",
+  "name": "Infinitely Stellar",
   "version": "0.2",
 
-  "description": "Adds infinite scrolling to all stallar.io flows.",
+  "description": "Adds infinite scrolling to all Stallar.io flows.",
   "icons": {
     "16": "icon-16.png",
     "48": "icon-48.png",
@@ -12,9 +12,9 @@
   "content_scripts": [
     {
       "matches": ["*://*.stellar.io/*"],
-      "css": ["infinite_stellario.css"],
-      "js": ["zepto.min.js","infinite_stellario.js"]
+      "css": ["infinitely_stellar.css"],
+      "js": ["zepto.min.js","infinitely_stellar.js"]
     }
   ],
-  "homepage_url": "https://github.com/metavida/infinite_stellario"
+  "homepage_url": "https://github.com/metavida/infinitely_stellar"
 }
