@@ -1,6 +1,0 @@
-content	infinitely_stellar content/ 
-overlay	chrome://browser/content/browser.xul	chrome://infinitely_stellar/content/overlay.xul
-
-locale	helloworld	en-US	locale/en-US/
-
-style	chrome://global/content/customizeToolbar.xul	chrome://helloworld/skin/overlay.css
