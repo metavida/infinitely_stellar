@@ -27,7 +27,7 @@
               // Get the main content of the next page, but remove elements
               // like the header, etc. that we don't want to repeat.
               var nextContentEls = placeHolder.find('#main').children().
-                not('#nav').not('#entity-nav-bk-lg').not('.notify-top');
+                not('#nav').not('[id^=entity-nav]').not('.notify-top');
               // Only append the content if the next page appears to not be empty.
               if(nextContentEls.size() > 3) {
                 $('#pagination').next().remove();
