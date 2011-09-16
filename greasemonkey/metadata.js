@@ -4,7 +4,7 @@
 // @description Adds infinite scrolling to all Stallar.io flows.
 // @copyright 2011, Marcos Wright-Kuhns
 // @license MIT license
-// @version 0.3
+// @version 0.4
 // @creator  Marcos Wright-Kuhns
 // @include http://stellar.io/*
 // ==/UserScript==
