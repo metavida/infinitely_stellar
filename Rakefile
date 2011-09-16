@@ -7,7 +7,7 @@ PLATFORMS = {
     :dist_dir => File.join(PROJECT_ROOT, 'dist/chrome'),
     :files => {
       'chrome/manifest.json'    => '/',
-      ['infinitely_stellar.js', 'chrome/init.after.js'] \
+      ['LICENSE.js', 'infinitely_stellar.js', 'chrome/init.after.js'] \
                                 => 'infinitely_stellar.js',
       'infinitely_stellar.css'  => '/',
       'chrome/zepto.min.js'     => '/',
@@ -19,7 +19,7 @@ PLATFORMS = {
   :greasemonkey => {
     :dist_dir => File.join(PROJECT_ROOT, 'dist/greasemonkey'),
     :files => {
-      ['greasemonkey/init.before.js', 'infinitely_stellar.js', 'greasemonkey/init.after.js'] \
+      ['greasemonkey/metadata.js', 'LICENSE.js', 'greasemonkey/init.before.js', 'infinitely_stellar.js', 'greasemonkey/init.after.js'] \
         => 'infinitely_stellar.user.js',
     }
   },

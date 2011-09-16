@@ -1,4 +1,8 @@
+# Infinitely Stellar
+
 [Stellar.io](http://stellar.io) is awesome! Having to click the Next button to see more great content was a drag. Now you don't have to!
+
+## Downloads
 
 Get Infinitely Stellar:
 
@@ -8,7 +12,13 @@ Get Infinitely Stellar:
 
 -- [Marcos](http://stellar.io/metavida)
 
-----
+## Screenshot
 
 ![Screenshot](/metavida/infinitely_stellar/raw/master/images/screenshot1-1280.png)  
 Photo [CC](http://creativecommons.org/licenses/by-nc-sa/3.0/) by [I, Timmy](http://www.flickr.com/photos/apoptotic/6096517361)
+
+## License
+
+Distributed via [The MIT License](https://github.com/metavida/infinitely_stellar/blob/master/LICENSE.js)
+
+Copyright (c) 2011 Marcos Wright-Kuhns
