@@ -1,4 +1,4 @@
-//     Zepto.js 0.7 (for debugging)
+//     Zepto.js 0.7 (with a patch from metavida/zepto
 //     (c) 2010, 2011 Thomas Fuchs
 //     Zepto.js may be freely distributed under the MIT license.
 
@@ -450,10 +450,19 @@ var Zepto = (function() {
 
       return this.each(function(index, target){
         for (var i = 0; i < nodes.length; i++) {
-          var node = nodes[inReverse ? nodes.length-i-1 : i];
+          var node = nodes[inReverse ? nodes.length-i-1 : i],
+            dw = document.write;
           traverseNode(node, function (node) {
             if (node.nodeName != null && node.nodeName.toUpperCase() === 'SCRIPT') {
-              window['eval'].call(window, node.innerHTML);
+              try {
+                var buf = '';
+                document['write'] = function(s) {
+                  buf += s;
+                };
+                window['eval'].call(window, node.innerHTML);
+                $(node).after(buf);
+              } catch(err) {}
+              document.write = dw;
             }
           });
           if (copyByClone && index < size - 1) node = node.cloneNode(true);
